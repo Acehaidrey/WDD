@@ -1,0 +1,170 @@
+/* Utility Stylesheets */
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+.clear {
+clear: both;
+}
+
+.img-scaled {
+width: 100%;
+}
+
+.img-scaled-wh {
+width: 100%;
+height: 100%;
+}
+
+/* Freebies */
+
+body {	/*the outer layer of the site and global style attributes*/
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin: 0px;
+background: #edeae5;
+}
+
+#background {
+    background: url('background.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#hero {
+    position: absolute;
+    color: white;
+    bottom: 60px;
+    right: 80px;
+    text-align: right;
+}
+#subheading {
+    font-size: 14px;
+}
+#heading {
+    font-size: 28px;
+}
+#link {
+    background: #de6868;
+    float: right;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+#container {
+    position: absolute;
+    width: 100%;
+    height: 518px;
+    top: 50%;
+    margin-top: -269px;
+}
+#content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    -webkit-transition: linear 0.2s;
+}
+#carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    right: 0px;
+    margin-top: -30px;
+    cursor: pointer;
+    -webkit-transition: linear 0.2s;
+}
+#carousel-prev:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#carousel-next:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Question 1 */
+#modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+#modal-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+
+}
+#modal-box {
+    position: absolute;
+    width: 500px;
+    height: 260px;
+    background-color: #5485BB;
+    z-index: 100;
+    top: calc(50% - 130px);
+    left: calc(50% - 250px);
+
+}
+/* Question 3 */
+#in {
+    border: 5px solid white;
+    padding: 10px;
+    background: transparent;
+    margin: 0px;
+    margin-bottom: 20px;
+/*    margin-left: 20px;*/
+    width: 460px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+#in::-webkit-input-placeholder  {
+    color: white;
+}
+
+#modal-content {
+    margin: 0 20px;
+    width: 100%;
+}
+
+.button {
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+    float: right;
+    color: #5485BB;
+    background: white;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#modal-header {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 700;
+}
+
+#cancel {
+    margin-right: 10px;
+}
+

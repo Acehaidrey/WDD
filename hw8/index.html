@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WDD Homework 8</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script> 
+        <script src = "assets/js/script.js"></script>
+    </head>
+    <body>
+        <!-- Sidebar Hamburger Icon -->
+        <div id = "sidebar-button">
+            <a id="nav-toggle">
+                <span></span>
+            </a>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class = "sidebar-container">
+            <!-- Question 1: Sidebar Code Here -->
+            <ul>
+                <a href = "#carousel-section"> <li class = "sidebar-item"> Home </li> </a>
+                <a href = "#name-section"> <li class = "sidebar-item"> Name </li> </a>
+                <a href = "#major-section"> <li class = "sidebar-item"> Major </li> </a>
+                <a href = "#fact-section"> <li class = "sidebar-item"> Fact </li> </a>
+            </ul>
+
+            <!-- End Question 1 Here (Use as many lines as needed, but don't add code below this point)-->
+        </nav>
+
+        <!-- Page Wrapper, Consisting of All the Sections -->
+        <div class = "page-wrapper">
+            <!-- Carousel Section -->
+            <section class = "section" id = "carousel-section"> 
+                <div class = "carousel-container">
+                <!-- Question 2: Carousel Code Here -->
+                    <div id="carousel">
+                        <div class="carousel-item">
+                            <div class="quote"> "Try to realize it's all within yourself. No one else can make you change. And to see you're really only very small. And life flows on within you and without you." <div class="author"> The Beatles</div> </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="quote"> "I believe that if life gives you lemons you should make lemonade...And try to find somebody whose life has given them vodka, and have a party." <div class="author"> Ron White</div> </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="quote"> "Comparison is the death of joy." <div class="author"> Mark Twain</div> </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="quote"> "You miss 100% of the shots you don't take. -Wayne Gretzky" <div class="author"> Tatiana Ferreyra</div> </div>
+                        </div>
+                        <div class="carousel-item"> 
+                            <div class="quote">"You can retake a class, but you CANT relive a party." <div class="author"> Some college frat star. </div></div>
+                        </div>
+
+                    </div>
+
+                <!-- End Question 2 Here (Use as many lines as needed, but don't add code below this point)-->
+                    <div id="carousel-prev">
+                        <img class="img-scaled" src="assets/img/arrowleft.png" />
+                    </div>
+                    <div id="carousel-next">
+                        <img class="img-scaled" src="assets/img/arrowright.png" />
+                    </div>
+                </div>
+            </section>
+            <!-- Name Section -->
+            <section class = "section" id = "name-section">
+                <div class = "text" id = "name-text">
+                    I am Ace Haidrey
+                </div>
+            </section>
+            <!-- Major Section -->
+            <section class = "section" id = "major-section">
+                <div class = "text" id = "major-text">
+                    I am majoring in EECS
+                </div>
+            </section>
+            <!-- Random Fact Section -->
+            <section class = "section" id = "fact-section">
+                <div class = "text" id = "fact-text">
+                    I have a coke addiction... #Coca-Cola
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

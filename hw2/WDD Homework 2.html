@@ -1,0 +1,178 @@
+
+<!-- saved from url=(0058)http://www.wdd.io/media/assignment/sp15/hw2/hw2/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>WDD Homework 1</title>
+    <link rel="stylesheet" type="text/css" href="./WDD Homework 2_files/style.css">
+    <link href="./WDD Homework 2_files/css" rel="stylesheet" type="text/css">
+<style type="text/css"></style></head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="header-caption">
+				<div id="header-caption-logo"><img class="img-scaled" src="./WDD Homework 2_files/logo.png"></div>
+				<div id="header-caption-name">Web Design DeCal</div>
+				<div class="clear"></div>
+			</div>
+			<div id="header-content">
+				<!-- ASSIGNMENT NAME -->
+				<div id="header-title">Homework 2</div>
+				<!-- DUE DATE -->
+				<div id="header-due">February 17th</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="announcement" class="section">
+			<div id="announcement-heading">Announcements</div>
+			<div id="announcement-content">
+				<p>Welcome to the week 2 of Web Design DeCal! We hope you are starting to get used to HTML and the basics of user interface design. Starting next week, things will get a little harder as we get into the first entree of this course - user interface aesthetics using CSS. This week's homework is the last "warmup" homework - it shouldn't take you more than an hour to complete this. If you have any questions regarding the material so far, please ask questions on Piazza or come to the office hour so that you are all set before we get into CSS.</p>
+				<p>Enroll on Telebears! If you are not enrolled by this Friday, you will be automatically dropped from our class roster.</p>
+				<p>All questions regarding the homework should go to Piazza. ask@wdd.io should only be used for logistical questions only.</p>
+				<p>Regarding late submissions: right now, the Portal automatically cuts off submissions at 6PM on Tuesday. We will fix this so that it takes late submission at 50% of total grade possible. Late submission for HW1 will open around Thursday.</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="info">
+				<!-- ASSIGNMENT TITLE -->
+				<div class="info-title">A New Way</div>
+				<div class="info-content">
+					<!-- REQUIRED TOOLS -->
+					<div class="info-required">Required Tool: Text Editor and Google Chrome Web Inspector</div>
+					<!-- INTRODUCTION -->
+					<div class="info-intro">In this exercise, you will learn how to represent an ordinary HTML tag that you learned in Lecture 1 using just divs, spans, and a pinch of CSS. </div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="body-header">Assignment</div>
+				<!-- CONTENT -->
+				
+				<!-- Styled Tags; P, UL, LI, .caption, A, IMG-->
+				<!-- Add P Tags for each paragraph -->
+				<!-- Use UL LI Tags for each lists -->
+				<!-- Use P Tags with "caption" class for paragraph captions (60% opacity) -->
+				<!-- Use IMG Tags for images -->
+				
+				<p class="caption">Technically, almost all HTML tags can be represented just using one tag: <span class="tag">&lt;div&gt;</span>To understand this, you must first know an important concept in HTML: inline and block elements. Simply put, inline elements stack horizontally and block elements stack vertically. An example of inline element is <span class="tag">&lt;span&gt;</span>. There are a lot of block elements, such as <span class="tag">&lt;p&gt;</span>, <span class="tag">&lt;img&gt;</span>, and <span class="tag">&lt;div&gt;</span>.</p>
+				<p class="caption">A powerful concept behind inline and block elements is that almost all HTML tags are essentially the same, and can be styled the way you want just by using CSS. For example, <span class="tag">&lt;p&gt;</span> tag is the same as <span class="tag">&lt;div&gt;</span> tag just with a few additional CSS properties. This is because <span class="tag">&lt;div&gt;</span> tag is a pure HTML block element that stacks vertically without any CSS property attached to it.</p>
+				
+				<ol>
+					<li>
+						<p>Start by making a copy of your website from Homework 1. To do this, right click on the folder containing your homework 1 website and duplicate / copy. Name this new folder hw2.</p>
+					</li>
+					<li>
+						<p>In this assignment, we will start using CSS. Create a new CSS file called style.css from Sublime Text and put it under assets/css folder. (Remember your workspace!) Then, we need to link this CSS file with the HTML so that when your website loads, your CSS file is loaded as well. Recall from lecture that we use <span class="tag">&lt;link&gt;</span> tag to do this.</p>
+						<p>Add the following code inside your <span class="tag">&lt;head&gt;</span> tag in index.html.</p>
+						<pre>&lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;</pre>
+						<p>Open your index.html in your web browser. To check if your CSS file is loaded, right click on your web page and open web inspector.  Click on the sources tab. If you linked your CSS file properly, it should look something like this:</p>
+						<img src="./WDD Homework 2_files/2_1.png">
+					</li>
+					<li>
+						<p>Now, let's change things around a bit. In your index.html change all instances of <span class="tag">&lt;h1&gt;</span> and <span class="tag">&lt;p&gt;</span> tags to <span class="tag">&lt;div&gt;</span> tag and all instances of <span class="tag">&lt;em&gt;</span> and <span class="tag">&lt;b&gt;</span> tags to <span class="tag">&lt;span&gt;</span> tag. We are doing this because <span class="tag">&lt;h1&gt;</span> and <span class="tag">&lt;p&gt;</span> tags are block elements, meaning they stack vertically, and <span class="tag">&lt;em&gt;</span> and <span class="tag">&lt;b&gt;</span> tags are inline elements, meaning they stack horizontally. They are just different flavors of <span class="tag">&lt;div&gt;</span> and <span class="tag">&lt;span&gt;</span> tags, and we can customize <span class="tag">&lt;div&gt;</span> and <span class="tag">&lt;span&gt;</span> to look exactly like any other block and inline elements. </p>
+						<p>Your page should then look something like this:</p>
+						<img src="./WDD Homework 2_files/3_1.png">
+					</li>
+					<li>
+						<p>Well, it looks even worse. How can we make it look like the way it did before? We need to use CSS to make this happen. But before we use CSS, CSS needs to know how to reference the elements in your HTML file. To do this, we can give each elements in your HTML file a "name" through giving them id or class. Let's assign your elements some names:</p>
+						<ol style="list-style-type: lower-alpha">
+							<li>
+								<p>For the div tag containing your name, give it an id of name - like this:</p>
+								<pre>&lt;div id="name"&gt;Andy Qin&lt;/div&gt;</pre>
+							</li>
+							<li>
+								<p>For the span tag containing your major, give it an id of major.</p>
+							</li>
+							<li>
+								<p>For the div tag containing your bio, give it an id of bio.</p>
+							</li>
+							<li>
+								<p>For the span tag containing your favorite music, give it an id of music.</p>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<p>Let's use web inspector to tweak its design. Open your index.html in your browser and open the web inspector.</p>
+						<ol style="list-style-type: lower-alpha">
+							<li>
+								<p>Find the <span class="element">#name</span> element in the left panel of your web inspector and click on it. Click on the + icon on the top right corner of your web inspector. This will create a new CSS style that you can modify. Name this new CSS style #name because this is the id of the element the CSS style will be applied to. (By default, click on the + icon should make it div#name - change this to <span class="element">#name</span>). You can click on an empty space to start adding new CSS properties. For <span class="element">#name</span> element, we will add following CSS properties:</p>
+								<img src="./WDD Homework 2_files/5_1.png">
+							</li>
+							<li>
+								<p>Similarly, add the following CSS properties to <span class="element">#major</span>:</p>
+								<img src="./WDD Homework 2_files/5_2.png">
+							</li>
+							<li>
+								<p>for <span class="element">#bio</span>:</p>
+								<img src="./WDD Homework 2_files/5_3.png">
+							</li>
+							<li>
+								<p>and finally, for <span class="element">#music</span>:</p>
+								<img src="./WDD Homework 2_files/5_4.png">
+							</li>
+						</ol>
+					</li>
+					<li>
+						<p>Don't refresh your page! Your changes are not saved yet. To save changes that you have made on your web inspector back to your style.css:</p>
+						<ol style="list-style-type: lower-alpha">
+							<li>
+								<p>Click on the inspector-stylesheet link on the right sidebar:</p>
+								<img src="./WDD Homework 2_files/6_1.png">
+							</li>
+							<li>
+								<p>Copy all (Cmd+A =&gt; Cmd+C or Ctrl+A =&gt; Ctrl+C) from inspector-stylesheet and open your actual style.css in your text editor. Paste the code onto the style.css. Then save.</p>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<p>Your page should now look exactly like it did after Homework 1, something like this:</p>
+						<img src="./WDD Homework 2_files/7_1.png">
+					</li>
+					<li>
+						<p>Now we're going to add a "Contact Me" form so people can email you directly from your page! This entails:</p>
+						<ol style="list-style-type: lower-alpha">
+							<li>
+								<p>Making a heading labeled "Contact Me" as large as the one you used for your name. You can do this either with pure HTML or the CSS properties for #name.</p>
+							</li>
+							<li>
+								<p>On the next line, put the words "Your name:", followed by an text input box.</p>
+							</li>
+							<li>
+								<p>On the next line, put the words "Your email:", followed by an text input box.</p>
+							</li>
+							<li>
+								<p>And on the next line, put the words "What's on your mind?" followed by a textarea, since we expect the content to be longer than the previous fields.</p>
+							</li>
+							<li>
+								<p>And on the next and final line, we want to make an input so that its type is "submit"; now the user can submit all of the information above.</p>
+							</li>
+						</ol>
+						<p>
+							At this point, your page should look something like this:
+						</p>
+						<img src="./WDD Homework 2_files/8.png">
+					</li>
+					<li>
+						<p>As you can see, this contact form is usable, but only just barely. Wouldn't it be nice if these elements which are stacking horizontally, would instead stack <em>vertically</em>? Is there any kind of general purpose tag we know that behaves as a block element, rather than these inline elements?</p>
+						<p>Take the HTML tag I'm referring to and wrap each line of code under "Contact Me", that is lines that include inputs and the textarea, with this special tag I'm talking about. Again, that's one of this kind of tag for <em>each</em> line, so each line is stacked vertically. This way you get our finished product:</p>
+						<img src="./WDD Homework 2_files/9.png">
+					</li>
+				</ol>
+				
+			</div>
+		</div>
+		<div id="submission">
+			<div id="submission-header">Submission</div>
+			<div id="submission-content">
+				<p>Submit the following files as a <strong>zip</strong> file through Assignments under Resources tab of the WDD Portal:</p>
+				<!-- REQUIRED FILES -->
+				<ul>
+					<li>index.html</li>
+					<li>assets/css/style.css</li>
+					<li>assets/img/</li>
+				</ul>
+				<p>We will check your code to see if you have used <span class="tag" &gt;<="" span="">&lt;div&gt;</span> and <span class="tag" &gt;<="" span="">&lt;span&gt;</span> tags instead of <span class="tag" &gt;<="" span="">&lt;em&gt;</span>, <span class="tag" &gt;<="" span="">&lt;b&gt;</span>, <span class="tag" &gt;<="" span="">&lt;h1&gt;</span>, and <span class="tag" &gt;<="" span="">&lt;p&gt;</span> tags. If you use any <span class="tag" &gt;<="" span="">&lt;em&gt;</span>, <span class="tag" &gt;<="" span="">&lt;b&gt;</span>, <span class="tag" &gt;<="" span="">&lt;h1&gt;</span>, and <span class="tag" &gt;<="" span="">&lt;p&gt;</span> tags, points will be deducted.</p>
+				<p>Your assignment must be submitted as a <strong>zip</strong> file. Submission will automatically fail if your submission does not contain the index.html or if it is not a zip file.</p>
+				<p>This assignment is due by Tuesday, <strong>February 17th</strong> at 6PM.</p>
+			</div>
+		</div>
+	</div>
+
+</body></html>

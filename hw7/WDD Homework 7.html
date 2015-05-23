@@ -1,0 +1,230 @@
+
+<!-- saved from url=(0061)http://www.wdd.io/media/assignment/sp15/hw7/hw7doc/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>WDD Homework 7</title>
+    <link rel="stylesheet" type="text/css" href="./WDD Homework 7_files/style.css">
+    <link href="./WDD Homework 7_files/css" rel="stylesheet" type="text/css">
+    <link href="./WDD Homework 7_files/css(1)" rel="stylesheet" type="text/css">
+<style type="text/css"></style></head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="header-caption">
+				<div id="header-caption-logo"><img class="img-scaled" src="./WDD Homework 7_files/logo.png"></div>
+				<div id="header-caption-name">Web Design DeCal</div>
+				<div class="clear"></div>
+			</div>
+			<div id="header-content">
+				<!-- ASSIGNMENT NAME -->
+				<div id="header-title">Homework 7</div>
+				<!-- DUE DATE -->
+				<div id="header-due">April 14th</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="info">
+				<!-- ASSIGNMENT TITLE -->
+				<div class="info-title">UI Modals in jQuery</div>
+				<div class="info-content">
+					<!-- REQUIRED TOOLS -->
+					<div class="info-required">Required Tools: Text Editor &amp; Google Chrome</div>
+					<!-- INTRODUCTION -->
+					<div class="info-intro"> You're going to be building a Modal Box. In particular, you'll be making one that allows people to sign up onto your awesome site!
+					</div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="body-header">Assignment</div>
+				<p class="caption">First, we're going to build the Modal Box from scratch, using HTML and CSS. Next, we're going to define its behavior as a Modal Box using the power of jQuery. Please read through the entire assignment before you begin.</p>
+				<!-- CONTENT -->
+				
+				<!-- Styled Tags; P, UL, LI, .caption, A, IMG-->
+				<!-- Add P Tags for each paragraph -->
+				<!-- Use UL LI Tags for each lists -->
+				<!-- Use P Tags with "caption" class for paragraph captions (60% opacity) -->
+				<!-- Use IMG Tags for images -->
+				
+				<a href="http://www.wdd.io/media/assignment/sp15/hw7/hw7doc/hw7.zip"><div class="download">Download Assignment</div></a>
+				<div class="body-header">Part 1 - Creating the Modal</div>
+				<p>Modal Boxes are used to present information on top of a page. You can find them at the top of your Facebook profile, Pinterest page, Twitter feed, etc.</p>
+
+				<p>They usually consist of three main components:</p>
+				<ol>
+					<li>Modal Container</li>
+					<li>Modal Overlay</li>
+					<li>Modal Box</li>
+				</ol>
+				<p><b>This is what you will be creating for this homework:</b></p>
+				<img src="./WDD Homework 7_files/1.png">
+
+				<p>The <b>Modal Container</b> encloses the Modal Overlay and Modal Box Wrapper.</p>
+
+				<p>The <b>Modal Overlay</b> is a semi-transparent black layer (div) that goes <i>on top</i> of the background but <i>below</i> the Modal Box. This is used to dim the background, so the user's attention is diverted towards the Modal Box.</p>
+
+				<p>The <b>Modal Box</b> is the star of the show. Along with it being both vertically and horizontally centered on the page, it is what takes in input from the user.</p>
+
+				<div class="body-header">Question 1: Style the Container, Overlay and Modal Box</div>
+
+				<p>The <b>Modal Container</b> should:</p>
+				<ol>
+					<li>Be full width and height</li>
+					<li>Have position: fixed</li>
+					<li>Have a z-index of 100</li>
+				</ol>
+
+				<p>The <b>Modal Overlay</b> should:</p>
+				<ol>
+					<li>Be full width and height</li>
+					<li>Be 50% transparent and black (background: rgba(0, 0, 0, 0.5);</li>				
+				</ol>
+
+				<p>The <b>Modal Box</b> should:</p>
+				<ol>
+					<li>Be 500px wide</li>
+					<li>Have a height of 260px</li>
+					<li>Have a background color of #5485BB</li>
+					<li>Be positioned <i>on top</i> of Modal Overlay and background (absolute)</li>
+					<li>Be horizontally and vertically centered (try using calc!)</li>
+					<li>Have a z-index of 100</li>
+				</ol>
+
+				<p><b>We should have something like this:</b></p>
+
+				<img src="./WDD Homework 7_files/2.png">
+				<br><br>
+				<div class="body-header">Part 2 - Adding the Content</div>
+				<p>Now that the Modal Container and its elements are set up, let's populate the Modal Box itself with some content!</p>
+
+				<p>Since our Modal Box will be for users to log in to our site, it should naturally have the following sections:</p>
+				<p><b>Modal Header</b>:</p>
+				<ul><li>The header will contain the title, which should say "Login"</li></ul>
+				<p><b>Modal Content</b>:</p>
+				<ul>
+					<li>One input box that should prompt the user to "Enter Username"</li>
+					<li>One input box that should prompt the user to "Enter Password"</li>
+				</ul>
+				<p><b>Modal Footer</b>:</p>
+				<ul>
+					<li>Contains one "Submit" button</li>
+					<li>Contains one "Cancel" button</li>
+				</ul>
+
+				<div class="body-header">Question 2: Write HTML for the Login Components</div>
+				<p>For the <b>Modal Header</b>, simply create a div with the text "Login".
+
+				</p><p>For the <b>Modal Content</b>, create a div and place the two input boxes for the username and password inside it. The following code creates an input text field in HTML. Use it to create an input box for both the username and the password. Be sure to change the placeholder accordingly. Note that you'll want to add a class (choose a name) to each input box so you can style them later:</p>
+				<div class="code">
+					<div class="code-content">
+						<div>&lt;input type = "text" class = "NAME_HERE" placeholder = "Enter Username" /&gt;</div>
+					</div>
+				</div>
+
+				<p>To create the <b>Modal Footer</b> and its buttons, just use divs inside divs!</p><p>
+				</p><p><b>You should have something like this so far:</b></p>
+
+				<img src="./WDD Homework 7_files/3.png">
+
+				<p class="caption"><b>Note</b>: Although you are free to style the Modal Box components as you please, please make sure your Modal Box has a total height of 260px and a total width of 500px. It should also be horizontally and vertically centered as depicted above.</p>
+
+				<p class="body-header">Question 3: Style Those Modal Components</p>
+
+				<p>Style the Modal Header using your knowledge of CSS so that it looks like it does in the first picture.</p>
+				<p>Next, Let's focus on the "Submit" and "Cancel" buttons. First of all, style them using basic CSS so they too look like they do in the first picture above. Next, add <b>cursor: pointer</b> to both buttons to change the cursor to a pointer when you hover over them. We also want the buttons to stack <i>horizontally</i>. There are the three main ways to horizontally align elements:</p>
+				<ol>
+					<li>Using <b>floats</b>, along with clearfix</li>
+					<li>Using <b>position: relative</b> on the container and <b>position: absolute</b> on the children</li>
+					<li>Using <b>display: inline-block</b> on each element</li>
+				</ol>
+
+				<p>Input boxes can be tricky to style using CSS, mainly because they come with default CSS styles. We don't want our input boxes to look as ugly as they do right now, so let's override those default styles.</p>
+				<p><b>Add the following code to your stylesheet:</b></p>
+				<div class="code">
+					<div class="code-content">
+						<div>.INPUT_BOX_CLASS_NAME_HERE&nbsp;&nbsp;{</div>
+						<div class="indent">border: 5px solid white;</div>
+						<div class="indent">padding: 10px;</div>
+						<div class="indent">background: transparent;</div>
+						<div class="indent">margin: 0px;</div> 
+						<div class="indent">margin-bottom: 20px;</div> 
+						<div class="indent">width: 460px;</div> 
+						<div class="indent">font-size: 12px;</div>
+						<div class="indent">font-weight: 700;</div>
+						<div class="indent">color: white;</div>
+						}
+					</div>
+				</div>
+
+				<p>One thing that's unique about input boxes is that they have something called <i>input placeholder text</i>, which is essentially a message that tells the user what input is expected. Notice how the placeholder text isn't white although we specified <b>color: white</b> above. Input boxes are annoying because you need to seperately override the default placeholder text styles. To do that, you can use the -webkit-input-placeholder CSS selector.</p>
+				<p><b>Add the following code to your stylesheet:</b></p>
+				<div class="code">
+					<div class="code-content">
+						<div>.INPUT_BOX_CLASS_NAME_HERE::-webkit-input-placeholder&nbsp;&nbsp;{</div>
+						<div class="indent">color: white;</div>
+						}
+					</div>
+				</div>
+
+				<p><b>You, should have something that looks like this:</b></p>
+
+				<img src="./WDD Homework 7_files/1.png">
+
+				<br><br>
+				<div class="body-header">Part 3: Add Behavior Using jQuery</div>
+
+				<p>We want our Modal Box to have some functionality. In particular, here's how we want the Modal Box to work:</p>
+				<ol>
+					<li>Clicking the red "Login" button on the home page brings up the Modal Box</li>
+					<li>Clicking the "Submit" or "Cancel" button hides the Modal Box</li>
+					<li>Clicking <i>anywhere outside</i> the Modal Box also closes the Modal Box (Good UX!)</li>
+					<li>Clicking the blue Modal Box itself, excluding the buttons, <i>does not</i> close the Modal Box</li>
+				</ol>
+
+				<p>All of this means that the Modal Box doesn't appear initially. Add <b>display: none</b> to the Modal Container to hide both the Modal Box <i>and</i> the Modal Overlay when the page is loaded.</p>	
+
+				<div class="body-header">Question 4: Implement #1 and #2 Above</div>
+
+				<p>To get the Modal Box to show up when the user clicks on "Login", the entire Modal Container should show up. This is because not only do we want the Modal Box to show up, but also the Modal Overlay in order to dim the background! Likewise, to hide the Modal Box, the entire Modal Container should become hidden.</p>
+				<p>To do this, create a <b>click()</b> event listener for each of the three buttons, and use the <b>show()</b> and <b>hide()</b> functions to change the display state of the Modal Container.</p>
+				<p class="caption"><b>Note</b>: There are other implementations that could also work here, so feel free to use which ever one you prefer!</p>
+
+
+				<div class="body-header">Question 5: Implement #3 and #4 Above</div>
+
+				<p>#3 uses some interesting jQuery. How can we use the <b>click()</b> event listener on the Modal Overlay?</p>
+
+				<p><b>Here is the basic idea:</b><br>
+				Execute the <b>hide()</b> function when a user clicks outside the Modal Box. Since we set up our Modal Container in such a way that the Modal Box is <i>on top</i> of the Modal Overlay (thanks, z-index!), clicking the Modal Box itself won't count as a click on the Modal Overlay. Therefore, clicking the Modal Overlay is the same as "clicking outside of the Modal Box."
+				</p>
+
+				<p>Just by creating a <b>click()</b> event listener for the Modal Overlay, you've effectively implemented #3 and #4!</p>
+
+				<p><b>Hurrah! Congratulations!</b> You've made a working Modal Box. We definitely encourage you to experiment with different designs if you have time!</p>
+				<p>As always, feel free to ask questions on Piazza if you have trouble and need some help.</p>
+
+
+			</div>
+		</div>
+		<div id="submission">
+			<div id="submission-header">Submission</div>
+			<div id="submission-content">
+				<p>Submit the following files as a <strong>zip</strong> file through Assignments under Resources tab of the WDD Portal:</p>
+				<!-- REQUIRED FILES -->
+				<ul>
+					<li>index.html</li>
+					<li>assets
+						<ul>
+							<li>style.css</li>
+							<li>script.js</li>
+							<li>jquery-1.9.1.js</li>
+							<li>background.jpg</li>
+						</ul>
+					</li>
+				</ul>
+				<p>Your assignment must be submitted as a <strong>zip</strong> file. Submission will automatically fail if your submission does not contain the index.html or if is not a zip file.</p>
+				<p>This assignment is due by Thursday, <strong>April 14th</strong> at 6PM.</p>
+			</div>
+		</div>
+	</div>
+
+</body></html>

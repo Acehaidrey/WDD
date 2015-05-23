@@ -1,0 +1,234 @@
+body {	/*the outer layer of the site and global style attributes*/
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin: 0px;
+background: #f7f5f2;
+}
+
+/* Utility Stylesheets */
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+.clear {
+clear: both;
+}
+
+.img-scaled {
+width: 100%;
+}
+
+
+/* INDEX */
+
+.question {
+    background: white;
+    padding: 18px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 700;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+#index {
+    width: 240px;
+    position: absolute;
+    left: calc(50% - 120px);
+    top: calc(50% - 206px);
+}
+
+/* Question 1 */
+
+#question1 {
+    margin: 30px;
+}
+#q1-rectangle {
+    position: absolute;
+    background: #5485bb;
+    width: 300px;
+    height: 150px;
+    border-radius: 3px;
+}
+#q1-circle {
+    position: absolute;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2f353f;  
+}
+
+/* Question 2 */
+
+#q2-rectangle {
+    position: absolute;
+    width: 600px;
+    background: #5485bb;
+    padding: 20px;
+}
+#question2 {
+    margin: 30px;
+}
+.q2-square {
+    float: left;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    background: #2f353f;
+}
+
+/* Question 3 */
+
+#question3 {
+height: 2400px;
+
+}
+#q3-topbar {
+position: fixed;
+width: 100%;
+padding: 10px 0px;
+background: #2f353f;
+}
+
+#q3-topbar-text {
+color: white;
+padding: 0px 30px;
+font-size: 12px;
+font-weight: 700;
+line-height: 30px;
+}
+
+
+
+/* Question 4 */
+
+#question4{
+
+}
+
+#q4-hero {
+    position: absolute;
+    top: 50%;
+    margin-top: -(610/2) px;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 100;
+}
+#q4-background {
+	background: url('background.jpg');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+/* Question 5 */
+
+#question5 {
+    width: 100%;
+    height: 100%;
+    background: #edeae5;
+    padding-top: 40px;
+}
+#q5-container {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    height: 120px;
+    margin-top: 30px;
+}
+#q5-submit {
+    background: #5485bb;
+    color: white;
+    font-size: 12px;
+    width: 180px;
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+    left: 90px;
+    top: 15px;
+}
+#q5-cancel {
+    background: #de6868;
+    color: white;
+    font-size: 12px;
+    width: 180px;
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+    left: 90px;
+    top: 25px;
+
+}
+
+/* Question 6 */
+
+.q6-item {
+    width: 30px;
+    height: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 50%;
+    border: 3px solid #857c78;
+    float: left;
+    margin: 30px;
+}
+#q6-spine {
+    position: absolute;
+    width: 720px;
+    height: 4px;
+    top: 50%;
+/*    left: 13%;*/
+    right: 25%;
+
+    background: #857c78;
+    border-radius: 2px;
+    z-index: -1;
+
+}
+#q6-container {
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#question6 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -50px;
+}
+
+/* Question 7 and Extra */
+
+#q7-sidebar {
+    width: 80px;
+    background: #2f353f;
+    position: fixed;
+    height: 100%;
+}
+#q7-sidebar-content {
+    padding: 10px;
+
+}
+#q7-logo {
+    width: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+#q7-title {
+    float: left;
+    padding: 40px 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #857c78;
+    border-bottom: 1px solid #DDD;
+    margin-left: 80px;
+    width: 100%;
+}

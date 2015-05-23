@@ -1,0 +1,113 @@
+
+<!-- saved from url=(0061)http://www.wdd.io/media/assignment/sp15/hw4/hw4doc/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>WDD Homework 4</title>
+    <link rel="stylesheet" type="text/css" href="./WDD Homework 4_files/style.css">
+    <link href="./WDD Homework 4_files/css" rel="stylesheet" type="text/css">
+    <link href="./WDD Homework 4_files/css(1)" rel="stylesheet" type="text/css">
+<style type="text/css"></style></head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="header-caption">
+				<div id="header-caption-logo"><img class="img-scaled" src="./WDD Homework 4_files/logo.png"></div>
+				<div id="header-caption-name">Web Design DeCal</div>
+				<div class="clear"></div>
+			</div>
+			<div id="header-content">
+				<!-- ASSIGNMENT NAME -->
+				<div id="header-title">Homework 4</div>
+				<!-- DUE DATE -->
+				<div id="header-due">March 3rd</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="info">
+				<!-- ASSIGNMENT TITLE -->
+				<div class="info-title">My Beautified Website</div>
+				<div class="info-content">
+					<!-- REQUIRED TOOLS -->
+					<div class="info-required">Required Tool: Text Editor and Google Chrome Web Inspector</div>
+					<!-- INTRODUCTION -->
+					<div class="info-intro">In the past two lectures, you  learned some essential CSS techniques to style your website. In this assignment, you will use your new skills to add beauty to your barebone website.</div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="body-header">Assignment</div>
+				<!-- CONTENT -->
+				
+				<!-- Styled Tags; P, UL, LI, .caption, A, IMG-->
+				<!-- Add P Tags for each paragraph -->
+				<!-- Use UL LI Tags for each lists -->
+				<!-- Use P Tags with "caption" class for paragraph captions (60% opacity) -->
+				<!-- Use IMG Tags for images -->
+				
+				<p class="caption">We have provided you with the backbone for your profile website. You can download the assignment file here:</p>
+				<a href="http://www.wdd.io/media/assignment/sp15/hw4/hw4doc/hw4.zip"><div class="download">Download File</div></a>
+				<p class="caption">You should fill in the missing information (name, bio, etc.) from the profile you created in the previous homework assignments before you begin.</p>
+
+						<div class="body-header">Part 1: Container</div>
+						<p>Websites that span the entire screen from left to right are generally tough to navigate and create a bad user experience. Let's establish some basic spacing by limiting the content space of the website. To do this, we'll create a 960px container, such that that all the content of the webpage is restricted within that container.</p>
+						<p>For the #container div, add the following CSS styles: </p>
+						<div class="code">
+							<div class="code-content">
+								<div>#container {</div>
+								<div class="indent">width: 960px;</div>
+								<div class="indent">margin: 0px auto;</div>
+								<div class="indent">padding: 30px 0px;</div>
+								<div>}</div>
+							</div>
+						</div>
+						<p>This will not only decrease the horizontal dimension of the entire website but also horizontally center it by using the neat margin: 0 auto trick!</p>
+						<div class="body-header">Part 2: Profile Picture</div>
+						<p>Now, it might be the case that your photo is very big (if you are using a large image.) <strong>Adjust the size of your photo by adjusting it's width attribute or by using the enclosing div method covered in lecture.</strong> If you assign only the width attribute, the proportions of your image will be preserved. On the other hand, if you assign both the width and the height, the proportions of your image will <em>not</em> be preserved, and your image may look stretched/skewed. Play around with your image until it looks about right. (If you're image looks fine to begin with, set it's width and height to it's original dimensions just for practice's sake.)</p>
+						<p>At this point, you should have something that looks like this:</p>
+							<img src="./WDD Homework 4_files/sshot1.jpg">
+						<p></p>
+						<div class="body-header">Part 3: Font Family</div>
+						<p>What's that ugly font? Let's change the font to something cooler. Google Fonts is a great resource to find fonts that you can use on your website for free! (Most fonts are actually quite expensive.) <strong>Import a font called Open Sans from Google Fonts and apply the font-family attribute to the body tag in your CSS stylesheet </strong>in order to make Open Sans the default font for your website.</p>
+						<div class="body-header">Part 4: Centered Layout</div>
+						<p>For this profile, we will be using a centered layout. Use margins and the text-align property to horizontally center all the text and images on your website.</p>
+						<p>You should have something that looks like this:</p>
+							<img src="./WDD Homework 4_files/sshot2.jpg">
+						<p></p>
+						<div class="body-header">Part 5: Header</div>
+						<p>Apart from the image, what should stand out in a profile page? Obviously, the page is about <em>you</em>, so emphasizing your name is a good idea. Let's give your name some emphasis through an adequate amount of spacing and careful use of typography. <strong>Use margins/paddings to separate the header from the rest of the web page. Then, use the font-size, font-weight, and font-style properties to give emphasis to both your name and year/major.</strong> Remember to use consistent margins and paddings! For example, try using multiples of 10.</p><p class="caption">Note: feel free to style your header as you wish, as long as you use all the CSS properties listed above.</p>
+						<p>You should have something that looks like this:</p>
+							<img src="./WDD Homework 4_files/sshot3.jpg">
+						<p></p>
+						<div class="body-header">Part 6: Description</div>
+						<p>Although we added a container div in part 1, the description still looks a bit too stretched horizontally. Let's make the description more legible. <strong>Decrease the width of the description and center it using margins. Adjust the font-size and line-height of your description.</strong> Usually, a good line-height is 1.5 ~ 2 times the size of your font.</p>
+						<div class="body-header">Part 7: Link to Button</div>
+						<p>The link to your favorite website doesn't really look good right now. It's has that standard blue/purple font, annoying underline, and most of all it doesn't get the emphasis it really deserves. Let's transform the link to an actual button! <strong>Use padding, margin, background-color, font-size, and the font-weight property on #link to make it look like a button.</strong> Depending on how you implement your page, may also need to use margins to seperate the button from the rest of the page and the width property to limit the width of the button. To remove the underline, add <b>text-decoration: none</b> to your anchor tag to override the anchor tag's default underline property. For my background color, I picked #4785dc. Feel free to play around with other colors!</p>
+						<p>You should have something that looks like this:</p>
+							<img src="./WDD Homework 4_files/sshot4.jpg">
+						<p></p>
+						<div class="body-header">Part 8: List</div>
+						<p>You're almost done! All that's left is to style the "Hobbies" list and the "College Bucket List" list. This is the look we're trying to achieve:</p>
+							<img src="./WDD Homework 4_files/sshot5.jpg" id="no-bottom">
+							<img src="./WDD Homework 4_files/sshot6.jpg" id="no-top">
+						<p></p>
+						<p>We want both lists to look almost identical (apart from the text), so we'll be using <em>classes</em> to style them. Take a look at the HTML structure of the lists. The "list-container" is what contains the entire list structure and is in gray (#f5f5f5) in the image above. The "list-title" is the list's title, such as "My Hobbies" and "My College Bucket List". Finally, the "list-item" is each white box you see within the larger gray box. Each list-item contains one item in the list! Pretty straightforward stuff.</p>
+						<p>How would you go about styling these lists? <strong>Apply margin, padding, and other basic CSS styles where appropriate to make your lists look as they do in the image.</strong></p>
+						<p class="caption">We're done! Your profile is now ready. Feel free to add whatever you like to your page, as long as you meet the minimum requirements. Be creative! As always, post on Piazza if you have trouble with any particular part of the homework.</p>
+			</div>
+		</div>
+		<div id="submission">
+			<div id="submission-header">Submission</div>
+			<div id="submission-content">
+				<p>Submit the following files as a <strong>zip</strong> file through the Assignments tab of the WDD Portal:</p>
+				<!-- REQUIRED FILES -->
+				<ul>
+					<li>index.html</li>
+					<li>assets/img</li>
+					<li>assets/css/style.css</li>
+				</ul>
+				<p>Your assignment must be submitted as a <strong>zip</strong> file. Submission will automatically fail if your submission does not contain the index.html or if is not a zip file.</p>
+				<p>This assignment is due by Tuesday, <strong>March 3rd</strong> at 6PM.</p>
+			</div>
+		</div>
+	</div>
+
+</body></html>

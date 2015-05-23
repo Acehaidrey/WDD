@@ -1,0 +1,87 @@
+/* You may use the following selectors, but it's not required. */
+
+#container {
+  	font-family: 'Open Sans';
+  	width: 960px;
+  	margin: 0px auto;
+  	padding: 30px 0px;
+  	margin-left: auto;
+ 	margin-right: auto;
+  	text-align: center;
+}
+
+#thumbnail img {
+  	width: 300px;
+  	height: 300px;
+}
+
+#header {
+  	margin: 25x;
+  	font-size: 35px;
+  	font-weight: 700;
+}
+
+#subheader {
+  	font-size: 25px;
+  	font-weight: 500;
+  	font-style: italic;
+  	color: grey;
+}
+
+#description {
+  	margin: 35px;
+  	width: 670px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	line-height: 1.5;
+}
+
+a {
+
+  	padding: 25px;
+  	color: white;
+  	margin:10px 5px 15px 20px;
+    text-decoration: none;
+}
+
+#link {
+  	width: 225px;
+  	height: 45px;
+  	background-color: #4785dc;
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center; 
+  	line-height: 45px;
+}
+
+.list-container {
+	margin-left: auto;
+  	margin-right: auto;
+  	background-color: #f5f5f5;
+  	width: 670px;
+  	height: 520px;
+
+
+}
+
+.list-title {
+  	font-size: 30px;
+  	margin-top: 40px;
+  	line-height: 90px;
+
+}
+
+.list-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list-item {
+	margin: 20px 0px 20px 0px;
+  	width: 600px;
+  	height: 60px;
+  	line-height: 55px;
+	background-color: white;
+  	margin-left: auto;
+  	margin-right: auto;
+}

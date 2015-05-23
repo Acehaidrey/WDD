@@ -1,0 +1,371 @@
+
+<!-- saved from url=(0058)http://www.wdd.io/media/assignment/sp15/hw8/hw8/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>WDD Homework 8</title>
+    <link rel="stylesheet" type="text/css" href="./WDD Homework 8_files/style.css">
+    <link href="./WDD Homework 8_files/css" rel="stylesheet" type="text/css">
+    <link href="./WDD Homework 8_files/css(1)" rel="stylesheet" type="text/css">
+<style type="text/css"></style></head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="header-caption">
+				<div id="header-caption-logo"><img class="img-scaled" src="./WDD Homework 8_files/logo.png"></div>
+				<div id="header-caption-name">Web Design DeCal</div>
+				<div class="clear"></div>
+			</div>
+			<div id="header-content">
+				<!-- ASSIGNMENT NAME -->
+				<div id="header-title">Homework 8</div>
+				<!-- DUE DATE -->
+				<div id="header-due">April 21st</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="info">
+				<!-- ASSIGNMENT TITLE -->
+				<div class="info-title">Carousels and Sidebars in jQuery</div>
+				<div class="info-content">
+					<!-- REQUIRED TOOLS -->
+					<div class="info-required">Required Tools: Text Editor &amp; Google Chrome</div>
+					<!-- INTRODUCTION -->
+					<div class="info-intro"> You're going to build a four-section page, with a working carousel and sidebar!
+					</div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="body-header">Assignment</div>
+				<p class="caption">First, we're going to build a sidebar and carousel from scratch using HTML and CSS. Next, we're going to implement them using the power of jQuery. This homework will take jQuery a step further. Please read through the entire assignment before you begin.</p>
+				<!-- CONTENT -->
+				
+				<!-- Styled Tags; P, UL, LI, .caption, A, IMG-->
+				<!-- Add P Tags for each paragraph -->
+				<!-- Use UL LI Tags for each lists -->
+				<!-- Use P Tags with "caption" class for paragraph captions (60% opacity) -->
+				<!-- Use IMG Tags for images -->
+				
+				<a href="http://www.wdd.io/media/assignment/sp15/hw8/hw8/hw8.zip"><div class="download">Download Assignment</div></a>
+				<b>This is what you will be creating for this homework:</b>
+				<img src="./WDD Homework 8_files/1.gif">
+				<div class="body-header">Question 1: Write HTML for the Sidebar</div>
+				<p>Sidebars are very common in web design. They are essentially navigation bars that are tucked away when not in use in order to draw the user's attention to the actual content.</p>
+
+				<p>Our sidebar will consist of three main components:</p>
+				<ol>
+					<li>The <b>Sidebar Container</b> which, just like any other container, will be the parent of the inner elements</li>
+					<li>The <b>Sidebar Unordered List (ul)</b> which we will use to create the sidebar items in list form</li>
+					<li>The <b>Sidebar List Items</b> which will be the buttons that the user can click to jump to a desired section of the page</li>
+				</ol>
+				<p>Take some time to look over the HTML structure of the page. The first thing you'll notice is that there is a sidebar button which is already coded for you. The sidebar button will be used to active/open the sidebar. Additionally, follow the comments in the HTML docuement and add the necessary information in each of the sections. Make sure to uncomment the information you provide.</p>
+				<p>Let's build our sidebar in HTML:
+				</p><ul>
+					<li>In the HTML element called ".sidebar-container", add an unordered list (use the ul tag) with no id or class</li>
+					<li>Within that unordered list, add four list items (use li tags) with the class "sidebar-item", referring to the four sections of our page</li>
+					<li> Our four sections will be Home, Name, Major, and Fact. Go ahead and add one section title inside each list item (Home in the first li, Name in the second li, etc.)</li>
+				</ul>
+				<p></p>
+				<p>Don't worry if you can't see any changes yet.</p>
+
+				<div class="body-header">Question 2: Write HTML for the Carousel</div>
+
+				<p>We want the first section of our page to be a carousel/slider. A carousel usually consists of a collection of images that are displayed one at a time and can be navigated through using "next" and "prev" buttons.</p>
+
+				<p>Carousels usually consist of three main components:
+				</p><ol>
+				     <li><b>Carousel Container</b></li>
+				      <li><b>Carousel</b></li>
+				      <li><b>Carousel Items</b></li>
+				</ol>
+				<p></p>
+
+				<p>The <b>Carousel Container</b> is what defines the viewing space of the entire carousel. In other words, it is the area that is visible in the carousel at any given time. </p>
+				<p>The <b>Carousel</b> itself will contain all the carousel items. You can think of it as a film reel that has a width equal to the sum of the widths of the carousel items. </p>
+				<p>The <b>Carousel Items</b> are the individual slides/sections of the carousel.</p>
+				<p>Let's code the carousel in HTML inside the HTML element called ".carousel-container":
+				</p><ul>
+				<li>Add a div with an id of "carousel"</li>
+				<li>Inside "#carousel", add another div with the class "carousel-item"</li>
+				</ul>
+				 <p>We want 5 carousel items for our carousel. Before you duplicate your code five times, let's add some content to the carousel item itself. In this homework, the carousel will be used to display a selection of your favourite quotes.</p>
+				 <p>Add the following code inside the HTML element ".carousel-item":
+				  </p><ul>
+				  <li>Create a div with a class called "quote"</li>
+				  <li>Add another div inside ".quote" with a class of "author", which we will use to mention the author of the quote</li>
+				  </ul>
+				  <p></p>
+				  <p>Now that each carousel item is ready, duplicate the code pertaining to the carousel item 5 times and add 1 of your favorite quotes and its author inside each carousel item.</p>
+				  <p>Finally, we want to have two buttons, "next" and "prev" in order to be able to navigate through the carousel. If you take a look at your HTML document, you'll notice these buttons have been provided for you. Please make sure you understand how they've been implemented.</p>
+				<p><b>You should have something like this:</b></p>
+
+				<img src="./WDD Homework 8_files/2.jpg">
+				<br><br>
+				<div class="body-header">Question 3: Write CSS for the Sidebar</div>
+				<p>Now, let's make that sidebar actually look like a true sidebar.</p>
+				<p>The way we're going to make our sidebar work is we're going to give it a fixed width of 280px, and have be <i>off the screen</i> by default (yes, you can do that!). To be more specific, we're going to assign it a <b>transform: translateX(-280px)</b> to shift it 280px to the left of the left edge of the screen, so that it it touches the left edge of the screen but is not immediately visible. In your CSS stylesheet, cretate a CSS element called ".sidebar-container" and add the following code to it:
+				</p><ul>
+				<li>Make it fixed on the screen (Hint: positioning)</li>
+				<li>Give it a width of 280px</li>
+				<li>Make it occupy the full height of the screen</li>
+				<li>Give it a background color of black</li>
+				<li>Have it be 280px to the left of the left edge of the screen (-webkit-transform: translateX(-280px))</li>
+				<li>Define a transition of 0.3s to animate the "slide out" effect (-webkit-transition: all 0.3s;)</li>
+				</ul>
+				<p></p>
+				<p><b>Becareful!</b> Remember that transforms and transitions need to be optimized for each browser via <b>vendor prefixes</b>. (Optional) Add vendor prefixes to enable browser support for WebKit browsers, Mozilla Firefox, and the default browser.</p>
+				<p>Next, lets style the sidebar items. Create a CSS element for the class ".sidebar-item" and add the following code:
+				</p><ul>
+				<li>Give it a font weight of 700</li>
+				<li>Give it a font size of 16px</li>
+				<li>Set its font color to be white</li>
+				<li>Give it a top and bottom padding 15px and a left and right padding of 20px</li>
+				</ul>
+
+				<p>Remember that your sidebar is sitting 280px to the left of the left edge of the screen. If you open up the Web Inspector, and deselect the transform property on the HTML element ".sidebar-container", this is what you should see:</p>
+				<img src="./WDD Homework 8_files/3.jpg"><br><br>
+
+				<div class="body-header">Question 4: Write CSS for the Carousel</div>
+				<p>There are two ways to make a working carousel: 
+				</p><ol>
+				<li>Using position absolute/relative: A little trickier, but allows you to click "next" on the last item to get back to the first item</li>
+				<li>Using overflow: Easier, but you cannot switch to next item after reaching the last item</li>
+				</ol><p></p>
+				<p>In this assignment, we will be using method #2: overflow.</p>
+
+				<p>Before explaining carousels, let's first go over the CSS overflow property. There are three values that are frequently used for CSS overflow:
+				</p><ol>
+				<li><b>overflow: visible</b>: This is the default. If content goes outside of a div, the content will still be
+				visible. For example, if you have a width 40px element inside a width 20px element, the inner
+				content will be visible.</li> 
+				<li><b>overflow: scroll</b>: If content goes outside of a div, the content outside the boundary of the
+				parent div will not be visible. However, you will be able to scroll to the content. For example, if you have a height 60px element inside a height 30px element, the content will initially be invisible, but you can scroll through the parent element and see the remaining element.</li>
+				<li><b>overflow: hidden</b>: If content goes outside of a div, the content outside the boundary of the parent div will not be visible. You cannot even scroll.</li>
+				</ol>
+				<p></p>
+
+				<p>In our carousel, we will have a carousel container with a width of 960px. This will be the section of the carousel that is visible at all times. Inside it, there will be 5 slides of quotes. Initially, only one quote will be visible; however, when the user clicks on "next", the currently visible image will scroll to the left and the user will see the second quote, and so on.</p>
+				<p>Lets begin by styling the carousel container. Create a CSS element for the class ".carousel-container" and add the following code:
+				</p><ul>
+				<li>Give it a width of 960px</li>
+				<li>Make it horizontally centered (use the margin trick!)</li>
+				<li>Give it a height of 500px</li>
+				<li>Hide the overflow so that the user can only see one quote at a time</li>
+				<li>Make it position: relative</li>
+				</ul>
+				<p></p>
+				<p>Next, let's style the actual carousel. Our carousel will consist of 5 quote slides, with each one having a width of 960px. Create a CSS element for the ID "#carousel" and add the following code:
+				</p><ul>
+				<li>Give it a width of (5 slides x 960px each) = 4800px</li>
+				<li>Make it occupy the full height of the carousel container</li>
+				<li>Give it a margin-left of 0px (we will manipulate this later)</li>
+				<li>Define a transition of 0.3s to animate the sliding effect (-webkit-transition: all 0.3s;)</li>
+				</ul>
+				<p></p>
+		
+				<p>Finally, we need to style the individual carousel items. Create a CSS element for the class ".carousel-item" and add the following code:
+				</p><ul>
+				<li>Give it a width of 960px</li>
+				<li>Set it to be position: relative</li>
+				<li>Make it occupy the full height of the carousel</li>
+				<li>Stack the items horizontally by using float: left</li>
+				</ul>
+				<p></p>
+
+				<p>By setting overflow: hidden on the carousel container, any element that goes outside of the carousel container will not be visible. Since we have a carousel with width 4800px, we can only see the first carousel item, and any remaining item will be invisible.</p>
+			
+				<p>As mentioned before, the carousel requires "prev" and "next" buttons in order to navigate through it. These buttons are already CSS-styled for you, as are the quotes and authors of each section in the carousel.</p>
+				<p>This is what it should look like:</p>
+				<img src="./WDD Homework 8_files/4.jpg">
+
+				<p class="body-header">Question 5: Other CSS and Class Manipulation</p>
+
+				<p>Let's quickly add some styling to the other sections in our page. Since this is not the main focus of the assignment, this question will be very straightforward. The text in each section is already styled for you.</p>
+				<p>Each section of our page has a class called section. We want the sections to look similar to eachother. Create a CSS element for the class ".section" and add the following code:
+				</p><ul>
+				<li>Make it full width</li>
+				<li>Give it a height of 500px</li>
+				<li>Make it position: relative</li>
+				</ul>
+				<p></p>
+
+				<p>Finally, let's give each section a distinct background color:
+				</p><ul>
+				<li>Give #name-section a background color of #2bde73</li>
+				<li>Give #major-section a background color of #8bb2af</li>
+				<li>Give #fact-section a background color of #fff</li>
+				<li>Give #fact-text a font color of black</li>
+				</ul>
+				<p></p>
+
+				<p>This is what part of your page should look like:</p>
+				<img src="./WDD Homework 8_files/5.jpg">
+				<p>Great! When we use jQuery, we're going to use classes to manipulate the state of the sidebar, page wrapper, and sidebar button. Each of these has two states: <b>"active"</b> and <b>"inactive"</b>, or in other words, "open" and "not open". We've defined three classes for you which can be found at the end of the stylesheet:
+				</p><p>
+				</p><ul>
+				<li><b>sidebar-active</b>: when added to the sidebar, this will bring the sidebar back into view by giving it setting its translateX value back to 0.</li>
+				<li><b>wrapper-active</b> and <b>button-active</b>: these classes will push the wrapper and button to the right by 280px to accomodate for the sidebar when in an active state</li>
+				<li><b>no-scroll</b>: this will prevent the user from scrolling when the sidebar is active/open</li>
+				</ul>
+				<p></p>
+				<p><b>Please make sure you understand the active state classes that we provided for you, as they are crucial to implementing the jQuery questions below.</b></p>
+
+				<div class="body-header">Question 6: Using jQuery to Create a Functional Sidebar</div>
+				<p>As of right now, our sidebar does not respond when the user clicks on the sidebar button. Let's use the power of jQuery to change that.
+				</p><p>Our sidebar button has two main purposes:
+				</p><ol>
+				<li>If the sidebar is active, the sidebar button should close the sidebar</li>
+				<li>If the sidebar is inactive, the sidebar button should open the sidebar</li>
+				</ol>
+				<p></p>
+				<p>Our sidebar button has two roles to play depending on the state of the sidebar. How can we implement it? We can use a click event listener on the sidebar button, along with some conditionals!</p>
+
+				<p>Let's first think about the case when the sidebar is inactive. What all do we need to do in order to change its state from inactive to active?</p>
+				<p>The active classes we defined earlier come in handy here. We simply need to add the respective active class to each of the wrapper, button, and sidebar!</p>
+
+				<p>We also need to stop the user from scrolling when the sidebar is active. We can achieve this by adding the no-scroll class to the body tag! However, want this to happen <i><b>after</b></i> the sidebar opens. In other words, we want this to take effect only after the entire sidebar transition has finished (remember from the CSS code that the sidebar transition is 0.3 seconds long). How do we apply a delay to one particular line of code in jQuery? We can use the setTimeout() function!</p>
+				<p>The following code adds the no-scroll class to the body tag with a delay of 300 milliseconds:</p>
+				<div class="code">
+					<div class="code-content">
+					<div>setTimeout(function() {</div>
+				    <div class="indent"> $('body').addClass('no-scroll'); </div>
+				     <div> }, 300);</div>
+				    </div>
+				</div>
+
+				<p>Now let's think about the case when the sidebar is active. How do we go make the sidebar go from an active state to an inactive state? We simple remove the active classes from the wrapper, button, and sidebar!</p>
+				<p>The <b>hasClass()</b>, <b>addClass()</b>, and <b>removeClass()</b> methods will be extremely useful in writing these functions. Use the jQuery API if you're unsure about what each one does.</p>
+				<p>Now its time to put all the pieces together and write the sidebar button click event listener. Here is some psuedo-code to help you write the body of the function:</p>
+				<div class="code">
+					<div class="code-content">
+					<div>(When the user clicks on an the sidebar button)</div>
+					<div>If the sidebar container has the "active" class:</div>
+				    <div class="indent">Remove the "no-scroll" class from the body tag</div>
+				    <div class="indent">Remove the "active" class from the sidebar button</div>
+				    <div class="indent">Remove the "active" class from the sidebar container</div>
+				    <div class="indent">Remove the "active" class from the page wrapper</div>
+				    <div>Otherwise:</div>
+				    <div class="indent">Add the "active" class to sidebar button</div>
+				    <div class="indent">Add the "active" class to sidebar container</div>
+				    <div class="indent">Add the "active" class to the page wrapper</div>
+				   	<div class="indent">Add the "no-scroll" class to the body tag with a delay of 300 ms (code above)</div>
+				    </div>
+				</div>
+				<p><b>Clarification:</b> In the JavaScript file, the comment for question #6 should read "//Implement the showing and hiding of the sidebar when the user clicks on <b>#</b>sidebar-button here". If your file already says that, you can just ignore this.</p>
+				<p>After implementing the code above, you should have a working sidebar! You should see something similar to this:</p>
+				<img src="./WDD Homework 8_files/6.jpg">
+				<p>We left the implementation of the sidebar links for the optional Extra for Experts section.</p>
+
+				<div class="body-header">Question 7: User Experience and jQuery </div>
+
+				<p>We know that in terms of good user experience, we should close the sidebar when the user clicks anywhere but the sidebar. This is similar to the idea expressed in last week's modal overlay click.</p>
+				<p>In this assignment, "anywhere but the sidebar" refers to the ".page-wrapper" div. Thus, if the sidebar is active, a click on the page wrapper should change the sidebar's state from active to inactive. As far as implementation goes, this is the same idea as clicking on the sidebar button when the sidebar is open.</p>
+				<p> Implement the page wrapper click even listener that exibits the same functionality as the button when the sidebar is active. Note that you can reuse part of your code from question #6 to implement this function.</p>
+
+				<div class="body-header">Question 8: Powering the Carousel with jQuery</div>
+
+				<p>As of now, the user can only see the first quote slide, and there's no way to see the remaining quote slides. We will add some jQuery to make this work.</p>
+				<p>Here's how our carousel will work:
+				</p><ul>
+				<li>When a user clicks on the "prev" button, the carousel will <i>slide to the right</i>, revealing the previous
+				quote slide</li> 
+				<li>When a user clicks on the "next" button, carousel will <i>slide to the left</i>, revealing the next quote slide</li>
+				</ul>
+				<p></p>
+				<p>Now, the question is: "How can we achieve slide to the right/left effect?"</p>
+				<p>To do this, we simply adjust the margin-left property of the carousel (which has width of 4800px). It is important to note that you can have a margin-left of negative value. For example, if you have margin-left: 100px, the div will make 100px of spacing from its current left position, pushing it to the right. If you have margin-left: -100px, the div will make 100px of spacing toward the opposite direction, pushing it to the left.</p>
+				<ul>
+				<li>To achieve the slide to the left effect, we add -960 to the current value of margin-left. This will push the carousel by 960px, which is the width of each carousel item, toward the left.</li>
+				<li>Likewise, to achieve slide to the right, we add 960 to the current value of margin-left. This will push the carousel by 960px toward the right.</li>
+				</ul>
+
+				<p>To get the current value of margin-left in an integer format, use:</p>
+				<div class="code">
+				<div class="code-content">
+					parseInt($('#carousel').css('margin-left').replace("px", ""));
+				</div>
+				</div>
+
+				<p>This will get the current CSS value of margin-left from "#carousel", take out the trailing "px" keyword, and then convert it to an integer.</p>
+				<p>To achieve the "slide" effect, simply modify the CSS margin-left value of the carousel via the css() function. Remember that we added a transition of 0.3 seconds to our carousel, so everytime we modify the margin-left value, the change will be animated over 0.3 seconds.</p>
+				<p>You should also make sure that you have not reached the start or the end of the carousel. If the user is on the first slide and clicks the "prev" button, the carousel should not slide to the right. To do this, you will need to make use of conditionals.</p>
+				<p>Use the following pseudo-code to write the "#carousel-next" click function:</p>
+				<div class="code">
+					<div class="code-content">
+					<div>(When the user clicks on an the carousel-next button)</div>
+					<div>Get the margin left value of the carousel and store it in a JavaScript variable</div>
+				    <div>If the current margin is equal to -3840 (i.e. we are at the end)</div>
+				    <div class="indent">return false</div>
+				    <div>Otherwise:</div>
+				    <div class="indent">Update the margin-left of the carousel to be the current margin - 960</div>
+				    </div>
+				</div>
+				<p>Use the following pseudo-code to write the "#carousel-prev" click function:</p>
+				<div class="code">
+					<div class="code-content">
+					<div>(When the user clicks on an the carousel-prev button)</div>
+					<div>Get the margin left value of the carousel and store it in a variable</div>
+				    <div>If the current margin is equal to 0 (i.e. we are at the beginning)</div>
+				    <div class="indent">return false</div>
+				    <div>Otherwise:</div>
+				    <div class="indent">Update the margin-left of the carousel to be the current margin + 960</div>
+				    </div>
+				</div>
+				<p class="caption">Note: A cool feature to add would be to dim the "prev" and "next" buttons if you reach the end/beginning of the carousel. This will be left as an exercise.</p>
+				<div class="body-header">Extra for Experts (Optional)</div>
+				<p>The links in our sidebar still do not work. That means there's room for improvement!</p>
+				<p>Here's the expected behavior: when the user clicks on a particular link, the page should animate and scroll to the desired section smoothly. After the animation is done, the sidebar should collapse.</p>
+				<p>Before we write some jQuery, each sidebar item needs to know where exactly it needs to jump to. To do that, we need to wrap each list item in the sidebar with an anchor tag and an <b>href</b> attribute. For example, if we wanted to jump to the name section, we'd do the following:</p>
+				<div class="code">
+				<div class="code-content">
+					&lt;a href = "#name-section"&gt;
+					<div class="indent">&lt;li class = "sidebar-item"&gt; Name &lt;/li&gt;</div>
+					&lt;/a&gt;
+					</div>
+				</div>
+				<p>The following function allows you to animate the html and body tags of a page to a particular section:
+				</p><div class="code">
+				<div class="code-content">
+					 $('html, body').animate({
+					<div class="indent">scrollTop: $( $.attr(this, 'href')).offset().top</div>
+					}, 300);
+					</div>
+				</div>
+				<p>To do this, we need to create a click event listener for anchor tags. The following pseudo-code will help you write the expected function:
+				</p><div class="code">
+				<div class="code-content">
+				<div>(When the user clicks on an anchor tag)</div>
+				remove the no scroll class on the body
+				<div>animate the html and body tags using the above function</div>
+				<div>Do the following code after a delay of 0.3 seconds:</div>
+				<div class="indent">Remove the active class from the sidebar container</div>
+				<div class="indent">Remove the active class from the sidebar button</div>
+				<div class="indent">Remove the active class from the page wrapper</div>
+				<div>return false</div>
+				</div>
+				<p></p>
+			</div>
+		</div>
+		<div id="submission">
+			<div id="submission-header">Submission</div>
+			<div id="submission-content">
+				<p>Submit the following files as a <strong>zip</strong> file through Assignments under the Assignments tab of the WDD Portal:</p>
+				<!-- REQUIRED FILES -->
+				<ul>
+					<li>index.html</li>
+					<li>assets
+						<ul>
+							<li>style.css</li>
+							<li>script.js</li>
+							<li>jquery-1.9.1.js</li>
+							<li>arrowleft.jpg</li>
+							<li>arrowright.jpg</li>
+						</ul>
+					</li>
+				</ul>
+				<p>Your assignment must be submitted as a <strong>zip</strong> file. Submission will automatically fail if your submission does not contain the index.html or if is not a zip file.</p>
+				<p>This assignment is due by Thursday, <strong>April 21st</strong> at 6PM.</p>
+			</div>
+		</div>
+	</div>
+
+</div></body></html>
