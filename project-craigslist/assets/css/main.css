@@ -1,0 +1,72 @@
+/* CSS file for main html */
+/* Author: Ace Haidrey */
+
+iframe {
+	height: 90px;
+}
+#header {
+    margin-right: auto;
+    margin-left: auto;
+	letter-spacing: 3px;
+	font-size: 40px;
+	text-align: center;
+}
+
+#header {
+	color: #55647d;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 32px;
+	font-style: italic;
+	margin-top: 2px;
+}
+
+.item {
+	display: inline-block;
+	margin: 10px 30px 10px 30px;
+}
+.item:hover { 
+    opacity: 0.5;
+    -webkit-transform: scale(1.15);
+
+}
+
+img:hover {
+	border-color: #530053;
+}
+
+img {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#container {
+	position: absolute;
+    top: 350px;
+    left: calc(50% - 305px);
+    color: #55647d;
+}
+
+h2 {
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+h1 {
+	margin-bottom: 0px;
+}
+
+hr {
+	width: 500px;
+	border-color: black;
+	margin-left: auto;
+	margin-right: auto;
+}

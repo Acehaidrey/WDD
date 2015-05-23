@@ -1,0 +1,217 @@
+iframe {
+  height: 90px;
+}
+
+#left-container {
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+#item-title {
+  position: absolute;
+  top: 40px;
+  left: 140px;
+  font-family: Lato;
+  font-size: 25px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#car {
+  position: absolute;
+  top: 70px;
+  left: 140px;
+  margin: 10px 0px;
+  width: 450px;
+}
+
+#next-pic {
+  position: absolute;
+  top: 210px;
+  left: 570px;
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid #262626;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  opacity: .5;
+}
+
+#prev-pic {
+  position: absolute;
+  top: 210px;
+  left: 120px;
+  width: 0px;
+  height: 0px;
+  border-right: 40px solid #262626;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  opacity: .5;
+}
+
+#star {
+  position: absolute;
+  top: 40px;
+  left: 115px;
+  z-index: 2;
+}
+#star:hover { 
+  z-index: -1;
+}
+#star-img {
+  width: 20px;
+}
+#yellow-star {
+  position: absolute;
+  top: 40px;
+  left: 115px;
+}
+#yellow-star-img {
+  width: 20px;
+}
+
+#car-pics {
+  margin: 20px 0px 40px 0px;
+  position: absolute;
+  top: 400px;
+  left: 140px;
+}
+
+#pic1 {
+  display: inline-block;
+  width: 130px;
+  float: left;
+
+}
+
+#pic2 {
+  display: inline-block;
+  width: 130px;
+  float: left;
+}
+
+#pic3 {
+  display: inline-block;
+  width: 130px;
+  border: 1px solid orange;
+  height: 85px;
+  float: left;
+
+}
+
+#description {
+  margin-top: 30px;
+  position: absolute;
+  font-family: Lato;
+  width: 580px;
+  top: 500px;
+  left: 140px;
+}
+
+#prev-post {
+  position: absolute;
+  font-family: Lato;
+  font-size: 12px;
+}
+
+#right-container {
+
+  position: absolute;
+  left: 800px;
+  top: 70px;
+}
+
+#reply {
+  position: absolute;
+  top: 170px;
+  background-color: #F5D948;
+  height: 30px;
+  width: 100px;
+}
+
+#button-text {
+  position: absolute;
+  top: 5px;
+  left: 32px;
+  font-family: Lato;
+  color: #262626;
+  font-size: 15px; 
+}
+
+#price {
+  position: absolute;
+  top: 120px;
+  font-family: Lato;
+  width: 300px;
+}
+
+#cond {
+  position: absolute;
+  top: 145px;
+  font-family: Lato;
+  width: 300px;
+}
+
+#detail-table {
+  position: absolute;
+  top: 210px;
+  border: 1px solid black;
+  padding: 5px;
+  font-family: Lato;
+}
+
+#detail-table th {
+  margin: 5px;
+  text-align: left;
+}
+
+#detail-table td {
+  padding-left: 10px;
+  text-align: right;
+}
+
+#map {
+  position: absolute;
+  top: 390px;
+  font-family: Lato;
+  font-size: 20px;
+}
+
+#addr {
+  position: absolute;
+  left: 110px;
+  top: 5px;
+  font-family: Lato;
+  font-size: 15px;
+}
+
+#map-img {
+  margin: 5px 0px;
+  width: 250px;
+}
+
+
+#next-post {
+  position: absolute;
+  left: 450px;
+  top: 8px;
+  font-family: Lato;
+  font-size: 12px;
+}
+#right-arrow {
+  position: absolute;
+  left: 480px;
+  top: 8px;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+/*    overflow-x: hidden;*/
+}
+
+

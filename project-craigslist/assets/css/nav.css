@@ -1,0 +1,196 @@
+/* CSS file for nav html */
+/* Author: Navroop Singh */
+
+body {
+  margin: 0px;
+  font-family: 'Lato';
+  background: #f7f5f2
+}
+
+.img-scaled {
+  width: 100%;
+}
+
+#nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background: #6F7EA8;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+#nav-bar .left {
+  left: 0px;
+  top: 0px;
+}
+
+#nav-bar .right {
+  float: right;
+  margin-right: 20px;
+}
+
+#nav-bar #title {
+  float: left;
+  padding: 15px 20px;
+}
+
+#post-button {
+  margin: 13px 60px;
+  opacity: 1;
+}
+
+#post-button:hover {
+  opacity: 0.8;
+}
+
+#navbar-user {
+  float: left;
+  position: relative;
+  top: 18px;
+}
+
+#user-pic {
+  width: 45px;
+  height: 45px;
+  float: left;
+  border-radius: 50%;
+  border: 3px solid #56617f;
+  opacity: 0.8;
+}
+
+#user-pic:hover {
+  opacity: 1;
+}
+
+#user-pic .img-scaled {
+  border-radius: 50%
+}
+
+#user-name {
+  float: left;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  line-height: 38px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  top: 6px;
+}
+
+#navbar-user-arrow {
+  float: left;
+  width: 20px;
+  margin: 10px 0px;
+  opacity: 0.8;
+  position: relative;
+  top: 6px;
+}
+
+#navbar-user-arrow:hover {
+  opacity: 1;
+}
+#nav-bar-user-arrow .img-scaled {
+  width: 40px
+}
+
+#title-logo {
+  width: 36px;
+  float: left;
+}
+
+#title-logo:hover {
+  opacity: 0.5;
+}
+
+#title-name {
+  float: left;
+  color: white;
+  margin-left: 40px;
+  margin-top: 5px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#nav {
+  float: left;
+}
+
+.nav-item {
+  float: left;
+  padding: 15px 20px;
+  transition: linear 0.2s;
+  -webkit-transition: linear 0.2s;
+  -moz-transition: linear 0.2s;
+}
+
+.nav-icon {
+  float: left;
+  margin-top: 9px;
+}
+
+#pic {
+    width: 30px;
+    height: 30px;
+    float: left;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    display: block;
+    margin: 13px 0;
+    overflow: hidden;
+}
+
+.img-logo {
+  width: 60px
+}
+
+#search {
+  height: 90px;
+}
+
+.search-input {
+  margin: 22px 0px 0px 30px;
+  padding: 5px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 17px;
+  width: 450px;
+  height: 30px;
+}
+
+#post {
+  margin: 20px 0px 0px 40px;
+}
+
+input.submit-post {
+  height: 42px;
+  width: 150px;
+  background: #56617f;
+  color: white;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 900;
+  border-style: none;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input.submit-post:hover {
+  opacity: 0.8;
+}
+
+input.submit-input {
+  height: 42px;
+  width: 80px;
+  background: #56617f;
+  color: white;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 900;
+  border-style: none;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input.submit-input:hover {
+  opacity: 0.8;
+}
